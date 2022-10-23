@@ -1,0 +1,25 @@
+---
+name: 'General Issue Template'
+about: This template is used as a guideline for tickets that represent work being done.
+title: ''
+labels: ''
+assignees: ''
+
+---
+## What
+
+<!-- Describe what you're going to do/how do you plan on completing this work. -->
+
+## Why?
+
+<!-- Why does this work need to be done? What's the impact of this work? -->
+
+## Acceptance Criteria
+
+<!-- Provide a clear description of what the definition of done is for this work. This should include what a user can expect to be able to do when this is complete and who needs to review the work before we can say it's done. -->
+
+## Point of contact
+<!-- Add point of contact/stakeholders, eg design/product/SEO/localization... -->
+
+## Additional Notes (optional)
+<!-- Add any other notes, implementation-specific notes, or call out any gotchas of the card here. -->
