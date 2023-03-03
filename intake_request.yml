@@ -1,0 +1,60 @@
+name: Intake Feature / Change Request
+description: File a request for a new use case or a new feature/change request
+title: '[Request]: '
+labels: ['intakerequest']
+assignees:
+  - berniefy
+  - robwang1
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to file this request. Project is continously improving and your input and feedback is invaluable
+  - type: textarea
+    id: tldr
+    attributes:
+      label: TL;DR of the use case
+      description: TL;DR of the use case or problem you are trying to solve with this request.
+      placeholder: Describe your use case or problem you are trying to solve with this request.
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: What is the priority of this request?
+      options:
+        - High (i am blocked without workarounds and really need this asap)
+        - Medium (inconvenient workarounds needed to meet a certain launch date)
+        - Low (i am not blocked and dont have a specific launch date in mind)
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Detailed description
+      description: Detailed description of the use case (end user point of view)
+    validations:
+      required: true
+  - type: dropdown
+    id: impactcategory
+    attributes:
+      label: What type of impact will this change or feature unlock?
+      options:
+        - Increased execution or experimentation speed
+        - Increased business impact to acquisition or retention
+        - Increased audience experience or engagement
+        - Other
+  - type: textarea
+    id: impact
+    attributes:
+      label: Quantifiable Opportunity / impact
+      description: If possible, describe the quantifiable opportunity or link to your calculation (Impact)
+  - type: textarea
+    id: logs
+    attributes:
+      label: Use Case Launch Date
+      description: When are you planning to launch your use case or leverage the desired new capabilities?
+  - type: textarea
+    id: contact
+    attributes:
+      label: Contact
+      description: Point of Contact for clarifications and additional information
