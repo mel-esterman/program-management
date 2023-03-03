@@ -1,0 +1,67 @@
+name: Bug Report
+description: Report a bug and/or unexpected behavior
+title: '[Bug]: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for taking the time to report this bug. Horton is continously improving and your feedback is invaluable!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Summarize the bug and/or unexpected behavior you encountered.
+      placeholder: Tell us whats not working as you expected!
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: What is the impact and urgency of this issue?
+      options:
+        - Sev 1 data loss, security vulnerability, crashes, unable to perform the scenario
+        - Sev 2 unreasonable workarounds needed
+        - Sev 3 reasonable workarounds needed
+        - Sev 4 inconvenience
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: What is the priority of this issue?
+      options:
+        - Prio 1 Urgent
+        - Prio 2 High
+        - Prio 3 Medium
+        - Prio 4 Low
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: How can this be reproduced?
+      description: Describe step-by-step how one can reproduce the issue - this is very important!
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What did you expect to happen?
+      description: Describe what behavior you expected
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+        - N/A
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output, error messages, etc. This will be automatically formatted into code, so no need for backticks.
+      render: shell
