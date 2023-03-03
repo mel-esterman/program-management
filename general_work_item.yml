@@ -1,0 +1,28 @@
+name: 'New Work Item'
+description: 'Create a new generic work item'
+body:
+  - type: markdown
+    attributes:
+      value: '## Please assign project `Project goes here` to allow tracking'
+  - type: textarea
+    id: usecase
+    attributes:
+      label: Use Case / Scenario
+      description: 'Detailed description of the use case (end user point of view)'
+      value: |
+        As a [user] I want to [action] so that [why, what are you solving with that action]
+    validations:
+      required: true
+  - type: textarea
+    id: acceptanceCriteria
+    attributes:
+      label: Acceptance Criteria
+      description: 'Detailed description how exactly you know this work is done-done'
+      value: |
+        1.
+        2.
+        3.
+        ...
+      render: bash
+    validations:
+      required: true
